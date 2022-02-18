@@ -1,4 +1,3 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
@@ -60,6 +59,12 @@ function init() {
                     return false;
                 }
             }
+        },
+        {
+            type: "list",
+            name: "license",
+            message: "What kind of license should your project have?",
+            choices: ["MIT", "ISC", "GNU GPLv3", "Apache License 2.0", "Mozilla Public License 2.0", "The Unlicense"]
         }
     ]);
 };

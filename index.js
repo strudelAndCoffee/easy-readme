@@ -109,6 +109,8 @@ function init() {
 };
 
 // Function call to initialize app
-init().then(data => {
-    console.log(data);
+init()
+.then(generateMarkdown)
+.then(md => {
+    console.log(md);
 });

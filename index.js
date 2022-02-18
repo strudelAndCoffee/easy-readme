@@ -65,6 +65,45 @@ function init() {
             name: "license",
             message: "What kind of license should your project have?",
             choices: ["MIT", "ISC", "GNU GPLv3", "Apache License 2.0", "Mozilla Public License 2.0", "The Unlicense"]
+        },
+        {
+            type: "input",
+            name: "install",
+            message: "What command should be run to install dependencies?",
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("Please provide a command for installation.");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "test",
+            message: "What command should be run to run tests?",
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("Please provide a command for running tests.");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "info",
+            message: "What does the user need to know about using the repo?",
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("Please provide instructions for using repo.");
+                    return false;
+                }
+            }
         }
     ]);
 };

@@ -1,49 +1,63 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
-  console.log(license);
-
-  if (license == "<no license>") {
-    return "";
-  }
-  return `<img src='https://img.shields.io/badge/License-${license}-green' />`
-}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  console.log(license);
 
   if (license == "<no license>") {
     return "";
   } else {
-    console.log("will write");
+    return `<img src='https://img.shields.io/badge/License-${license}-green' />`;
   }
+};
+
+// returns the license link
+function renderLicenseLink(license) {
+
+  let url = "";
+
+  if (license == "<no license>") {
+    return "";
+  } else if (license == "GNU GPLv3") {
+    url = "https://choosealicense.com/licenses/gpl-3.0/";
+  } else if (license == "Apache License 2.0") {
+    url = "https://choosealicense.com/licenses/apache-2.0/";
+  } else if (license == "Mozilla Public License 2.0") {
+    url = "https://choosealicense.com/licenses/mpl-2.0/";
+  } else {
+    url = `https://choosealicense.com/licenses/${license}`;
+  }
+
+  let link = `<a href='${url}' style='text-decoration:none'>${license}</a>`
+  return `Licensed under the ${link} license.`;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  console.log(license);
 
   if (license == "<no license>") {
     return "";
-  } else {
-    console.log("will write");
   }
+
+  let badge = renderLicenseBadge(license);
+  let link = renderLicenseLink(license);
+
+  return `
+  ## License
+
+  ${badge}
+  ${link}
+
+  `;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
-  
-  renderLicenseLink(data.license)
-  renderLicenseSection(data.license)
+  let licenseSection = renderLicenseSection(data.license);
 
   return `
   # ${data.title}
 
-  ## ${renderLicenseBadge(data.license)}
+  ${licenseSection}
 
 `;
 }

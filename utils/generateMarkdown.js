@@ -1,4 +1,4 @@
-// returns a license badge based on which license is passed in
+// returns a license badge
 function renderLicenseBadge(license) {
 
   if (license == "<no license>") {
@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
   }
 };
 
-// returns the license link
+// returns the url for license link
 function renderLicenseLink(license) {
 
   let url = "";
@@ -28,8 +28,7 @@ function renderLicenseLink(license) {
   return url;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// returns license section of readme, unless no license is selected
 function renderLicenseSection(license) {
 
   if (license == "<no license>") {

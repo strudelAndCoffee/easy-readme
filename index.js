@@ -77,7 +77,7 @@ function init() {
             type: "list",
             name: "license",
             message: "What kind of license should your project have?",
-            choices: ["MIT", "ISC", "GNU GPLv3", "Apache License 2.0", "Mozilla Public License 2.0", "The Unlicense"]
+            choices: ["MIT", "ISC", "GNU GPLv3", "Apache License 2.0", "Mozilla Public License 2.0", "<no license>"]
         },
         {
             type: "input",

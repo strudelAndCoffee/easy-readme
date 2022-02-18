@@ -34,6 +34,32 @@ function init() {
                     return false;
                 }
             }
+        },
+        {
+            type: "input",
+            name: "title",
+            message: "What is your project's name?",
+            validate: titleInput => {
+                if (titleInput) {
+                    return true;
+                } else {
+                    console.log("Please enter a name for your project.");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "description",
+            message: "Please write a short description of your project:",
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("Please provide a description for your project.");
+                    return false;
+                }
+            }
         }
     ]);
 };

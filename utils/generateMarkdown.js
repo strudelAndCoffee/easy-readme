@@ -5,9 +5,8 @@ function renderLicenseBadge(license) {
 
   if (license == "<no license>") {
     return "";
-  } else {
-    console.log("will write");
   }
+  return `<img src='https://img.shields.io/badge/License-${license}-green' />`
 }
 
 // TODO: Create a function that returns the license link
@@ -37,11 +36,14 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
-  renderLicenseBadge(data.license)
+  
   renderLicenseLink(data.license)
   renderLicenseSection(data.license)
 
-  return `# ${data.title}
+  return `
+  # ${data.title}
+
+  ## ${renderLicenseBadge(data.license)}
 
 `;
 }

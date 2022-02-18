@@ -10,9 +10,38 @@ const questions = [];
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "github",
+            message: "What is your GitHub username?",
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log("Please enter your GitHub username.")
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email address?",
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log("Please enter your email.");
+                    return false;
+                }
+            }
+        }
+    ]);
+};
 
 // Function call to initialize app
-init();
-
-console.log(process.argv[2]);
+init().then(data => {
+    console.log(data);
+});

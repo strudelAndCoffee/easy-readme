@@ -40,11 +40,9 @@ function renderLicenseSection(license) {
   let link = renderLicenseLink(license);
 
   return `
-  ## License
+  ## ${badge}
 
-  <a href='${link}' style='text-decoration:none' >${badge}</a>
-
-
+  <a href='${link}' style='text-decoration:none' >${license}</a>
   `;
 }
 

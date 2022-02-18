@@ -2,10 +2,8 @@
   # a
 
   
-  ## License
+  ## <img src='https://img.shields.io/badge/License-ISC-green' />
 
-  <a href='https://choosealicense.com/licenses/gpl-3.0/' style='text-decoration:none' ><img src='https://img.shields.io/badge/License-GNU GPLv3-green' /></a>
-
-
+  <a href='https://choosealicense.com/licenses/ISC' style='text-decoration:none' >ISC</a>
   
 

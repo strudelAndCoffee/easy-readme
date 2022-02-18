@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// TODO: Create a function to write README file
+// creates finished README.md in dist directory
 function writeToFile(fileName, data) {
     return new Promise((resolve, reject) => {
         fs.writeFile(fileName, data, err =>{
@@ -18,7 +18,7 @@ function writeToFile(fileName, data) {
     });
 }
 
-// TODO: Create a function to initialize app
+// prompts users to answer questions about readme content
 function init() {
     return inquirer.prompt([
         {
@@ -121,7 +121,6 @@ function init() {
     ]);
 };
 
-// Function call to initialize app
 init()
 .then(generateMarkdown)
 .then(mdFile => {

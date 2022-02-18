@@ -25,8 +25,7 @@ function renderLicenseLink(license) {
     url = `https://choosealicense.com/licenses/${license}`;
   }
 
-  let link = `<a href='${url}' style='text-decoration:none'>${license}</a>`
-  return `Licensed under the ${link} license.`;
+  return url;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -43,8 +42,8 @@ function renderLicenseSection(license) {
   return `
   ## License
 
-  ${badge}
-  ${link}
+  <a href='${link}' style='text-decoration:none' >${badge}</a>
+
 
   `;
 }

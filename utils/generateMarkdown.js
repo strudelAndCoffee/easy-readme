@@ -22,7 +22,7 @@ function renderLicenseLink(license) {
   } else if (license == "Mozilla Public License 2.0") {
     url = "https://choosealicense.com/licenses/mpl-2.0/";
   } else {
-    url = `https://choosealicense.com/licenses/${license}`;
+    url = `https://choosealicense.com/licenses/${license.toLowerCase()}`;
   }
 
   return url;

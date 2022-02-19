@@ -50,6 +50,9 @@ function generateMarkdown(data) {
 
   console.log(data);
 
+  let installCommand = "`" + data.install + "`";
+  let testCommand = "`" + data.test + "`";
+
   // function calls for license generation
   let getLicenseTab = () => {
     if (data.license == "<no license>") {
@@ -84,9 +87,9 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  **Enter this command to install dependencies:**
+  Enter this command to install dependencies:
   
-  > ${data.install}
+  ${installCommand}
 
   ## Usage
 
@@ -96,9 +99,9 @@ function generateMarkdown(data) {
 
   ## Tests
 
-  **Enter this command to run application:**
+  Enter this command to run application:
   
-  > ${data.test}
+  ${testCommand}
 
   ## Questions
 

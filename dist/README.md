@@ -1,12 +1,12 @@
 
-  # project
+  # pro
 
-  ![License badge](https://img.shields.io/badge/License-GNU%20GPLv3-green)
+  ![License badge](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-green)
   ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
 
-  adsfgdfsdas
+  asd
 
   ## Table of Contents
 
@@ -19,9 +19,9 @@
 
   ## Installation
 
-  **Enter this command to install dependencies:**
+  Enter this command to install dependencies:
   
-  > npm install
+  `npm i`
 
   ## Usage
 
@@ -31,9 +31,9 @@
 
   ## Tests
 
-  **Enter this command to run application:**
+  Enter this command to run application:
   
-  > node index
+  `node index`
 
   ## Questions
 
@@ -44,6 +44,6 @@
   
   ## License
 
-   Licensed under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+   Licensed under [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
   
 

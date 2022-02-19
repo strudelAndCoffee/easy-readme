@@ -1,12 +1,12 @@
 
   # project
 
-  ![License badge](https://img.shields.io/badge/License-Apache%20License%202.0-green)
+  ![License badge](https://img.shields.io/badge/License-GNU%20GPLv3-green)
   ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
 
-  asdfv
+  adsfgdfsdas
 
   ## Table of Contents
 
@@ -19,7 +19,9 @@
 
   ## Installation
 
-  **Enter this command to install dependencies:** i
+  **Enter this command to install dependencies:**
+  
+  > npm install
 
   ## Usage
 
@@ -29,7 +31,9 @@
 
   ## Tests
 
-  **Enter this command to run application:** t
+  **Enter this command to run application:**
+  
+  > node index
 
   ## Questions
 
@@ -40,6 +44,6 @@
   
   ## License
 
-   Licensed under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
+   Licensed under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
   
 

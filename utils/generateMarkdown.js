@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (license == "<no license>") {
     return "";
   } else {
-    return `<img src='https://img.shields.io/badge/License-${license}-green' />`;
+    return `[https://img.shields.io/badge/License-${license}-green]`;
   }
 };
 
@@ -35,23 +35,66 @@ function renderLicenseSection(license) {
     return "";
   }
 
-  let badge = renderLicenseBadge(license);
   let link = renderLicenseLink(license);
 
   return `
   ## License
 
-  <a href='${link}' style='text-decoration:none' >${badge}</a>
+   Licensed under [${license}](${link})
   `;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
+  console.log(data);
+
+  // function calls for license generation
+  let getLicenseTab = () => {
+    if (data.license == "<no license>") {
+      return "";
+    } else {
+      return "* [License](#license)"
+    }
+  }
+  let licenseTab = getLicenseTab();
+  let licenseBadge = renderLicenseBadge(data.license);
   let licenseSection = renderLicenseSection(data.license);
 
+  // generated README markdown layout
   return `
   # ${data.title}
+
+  ${licenseBadge}
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+  
+  ## Description
+
+  ${data.description}
+
+  ## Table of Contents
+
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  ${licenseTab}
+
+  ## Installation
+
+  Run this command to install dependencies: ${data.install}
+
+  ## Usage
+
+  ## Contributing
+
+  ## Tests
+
+  ## Questions
+
+  View my GitHub profile: [${data.github}](https://github.com/${data.github})
+  Reach me via email: ${data.email} 
 
   ${licenseSection}
 

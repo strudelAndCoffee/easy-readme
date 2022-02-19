@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (license == "<no license>") {
     return "";
   } else {
-    return `[(https://img.shields.io/badge/License-${license}-green)]`;
+    return `(https://img.shields.io/badge/License-${license}-green)`;
   }
 };
 
@@ -66,7 +66,7 @@ function generateMarkdown(data) {
   # ${data.title}
 
   ${licenseBadge}
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
+  [Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
   
   ## Description
 

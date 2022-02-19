@@ -1,12 +1,12 @@
 
-  # project name
+  # pro
 
-  [(https://img.shields.io/badge/License-MIT-green)]
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
+  (https://img.shields.io/badge/License-MIT-green)
+  [Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
   
   ## Description
 
-  sdfghrthyfgtdrfd
+  sdfs
 
   ## Table of Contents
 
@@ -31,9 +31,9 @@
 
   ## Questions
 
-  View my GitHub profile: [username](https://github.com/username)
+  View my GitHub profile: [naem](https://github.com/naem)
 
-  Reach me via email: email 
+  Reach me via email: emil 
 
   
   ## License

@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
     return "";
   } else {
     let link = license.replace(/ /g, "%20");
-    return `<img src='https://img.shields.io/badge/License-${link}-green' />`;
+    return `![License badge](https://img.shields.io/badge/License-${link}-green)`;
   }
 };
 
@@ -67,8 +67,8 @@ function generateMarkdown(data) {
   # ${data.title}
 
   ${licenseBadge}
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
-  
+  ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
+
   ## Description
 
   ${data.description}
@@ -84,7 +84,7 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  ***Enter this command to install dependencies:*** ${data.install}
+  **Enter this command to install dependencies:** ${data.install}
 
   ## Usage
 
@@ -94,7 +94,7 @@ function generateMarkdown(data) {
 
   ## Tests
 
-  ***Enter this command to run application:*** ${data.test}
+  **Enter this command to run application:** ${data.test}
 
   ## Questions
 

@@ -1,12 +1,12 @@
 
   # project
 
-  <img src='https://img.shields.io/badge/License-MIT-green' />
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
-  
+  ![License badge](https://img.shields.io/badge/License-Apache%20License%202.0-green)
+  ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
+
   ## Description
 
-  asdfdgfd
+  asdfv
 
   ## Table of Contents
 
@@ -19,7 +19,7 @@
 
   ## Installation
 
-  ***Enter this command to install dependencies:*** i
+  **Enter this command to install dependencies:** i
 
   ## Usage
 
@@ -29,7 +29,7 @@
 
   ## Tests
 
-  ***Enter this command to run application:*** t
+  **Enter this command to run application:** t
 
   ## Questions
 
@@ -40,6 +40,6 @@
   
   ## License
 
-   Licensed under [MIT](https://choosealicense.com/licenses/mit)
+   Licensed under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
   
 

@@ -87,21 +87,17 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  Enter this command to install dependencies:
-  
-  ${installCommand}
+  Enter this command to install dependencies: ${installCommand}
 
   ## Usage
+
+  ## Tests
+
+  Enter this command to run application: ${testCommand}
 
   ## Contributing
 
   Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
-
-  ## Tests
-
-  Enter this command to run application:
-  
-  ${testCommand}
 
   ## Questions
 

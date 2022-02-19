@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (license == "<no license>") {
     return "";
   } else {
-    return `[https://img.shields.io/badge/License-${license}-green]`;
+    return `[(https://img.shields.io/badge/License-${license}-green)]`;
   }
 };
 
@@ -66,7 +66,7 @@ function generateMarkdown(data) {
   # ${data.title}
 
   ${licenseBadge}
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
   
   ## Description
 
@@ -89,11 +89,14 @@ function generateMarkdown(data) {
 
   ## Contributing
 
+  Please review iew the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
+
   ## Tests
 
   ## Questions
 
   View my GitHub profile: [${data.github}](https://github.com/${data.github})
+
   Reach me via email: ${data.email} 
 
   ${licenseSection}

@@ -1,12 +1,12 @@
 
   # project name
 
-  [https://img.shields.io/badge/License-Apache License 2.0-green]
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+  [(https://img.shields.io/badge/License-MIT-green)]
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
   
   ## Description
 
-  asdewffvasdcvd
+  sdfghrthyfgtdrfd
 
   ## Table of Contents
 
@@ -19,22 +19,25 @@
 
   ## Installation
 
-  Run this command to install dependencies: install
+  Run this command to install dependencies: i
 
   ## Usage
 
   ## Contributing
 
+  Please review iew the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
+
   ## Tests
 
   ## Questions
 
-  View my GitHub profile: [strudelandcoffee](https://github.com/strudelandcoffee)
-  Reach me via email: me@email.com 
+  View my GitHub profile: [username](https://github.com/username)
+
+  Reach me via email: email 
 
   
   ## License
 
-   Licensed under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
+   Licensed under [MIT](https://choosealicense.com/licenses/mit)
   
 

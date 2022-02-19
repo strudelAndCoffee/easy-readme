@@ -4,7 +4,8 @@ function renderLicenseBadge(license) {
   if (license == "<no license>") {
     return "";
   } else {
-    return `(https://img.shields.io/badge/License-${license}-green)`;
+    let link = license.replace(/ /g, "%20");
+    return `<img src='https://img.shields.io/badge/License-${link}-green' />`;
   }
 };
 
@@ -66,7 +67,7 @@ function generateMarkdown(data) {
   # ${data.title}
 
   ${licenseBadge}
-  [Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
   
   ## Description
 
@@ -83,15 +84,17 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  Run this command to install dependencies: ${data.install}
+  ***Enter this command to install dependencies:*** ${data.install}
 
   ## Usage
 
   ## Contributing
 
-  Please review iew the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
+  Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
 
   ## Tests
+
+  ***Enter this command to run application:*** ${data.test}
 
   ## Questions
 

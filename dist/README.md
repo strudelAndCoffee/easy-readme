@@ -1,12 +1,12 @@
 
-  # pro
+  # Porject Name
 
-  ![License badge](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-green)
+  ![License badge](https://img.shields.io/badge/License-GNU%20GPLv3-green)
   ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
 
-  asd
+  This is a description about the project
 
   ## Table of Contents
 
@@ -19,31 +19,29 @@
 
   ## Installation
 
-  Enter this command to install dependencies:
-  
-  `npm i`
+  Enter this command to install dependencies: `npm i`
 
   ## Usage
+
+  from the command line, runn the application, and follow prompts to generate markdown. The finished readme file will appear in the "dist" folder
+
+  ## Tests
+
+  Enter this command to run application: `node index.js`
 
   ## Contributing
 
   Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
 
-  ## Tests
-
-  Enter this command to run application:
-  
-  `node index`
-
   ## Questions
 
-  View my GitHub profile: [name](https://github.com/name)
+  View my GitHub profile: [strudelAndCoffee](https://github.com/strudelAndCoffee)
 
-  Reach me via email: email 
+  For additional questions, you may reach me via email: me@email.com 
 
   
   ## License
 
-   Licensed under [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
+   Licensed under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
   
 

@@ -91,6 +91,8 @@ function generateMarkdown(data) {
 
   ## Usage
 
+  ${data.info}
+
   ## Tests
 
   Enter this command to run application: ${testCommand}
@@ -103,7 +105,7 @@ function generateMarkdown(data) {
 
   View my GitHub profile: [${data.github}](https://github.com/${data.github})
 
-  Reach me via email: ${data.email} 
+  For additional questions, you may reach me via email: ${data.email} 
 
   ${licenseSection}
 

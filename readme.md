@@ -1,11 +1,11 @@
 # Easy Readme
 
-![License badge](https://img.shields.io/badge/License-mit-green)
+![License badge](https://img.shields.io/badge/License-MIT-green)
 ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
 ## Description
 
-An easy to use application to generate a professional README.md file for your repository. This README was created using the application!
+An easy to use application to generate a professional README.md file for your repository. The layout for this README was created using the Easy Readme!
 
 ## Table of Contents
 
@@ -41,4 +41,4 @@ For additional questions, you may reach me via email: steviejtrudell@gmail.com
 
 ## License
 
-Licensed under [MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)

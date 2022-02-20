@@ -95,7 +95,7 @@ function init() {
         {
             type: "input",
             name: "test",
-            message: "What command should be run to run tests?",
+            message: "What command should be run to test the application??",
             validate: input => {
                 if (input) {
                     return true;
@@ -114,6 +114,24 @@ function init() {
                     return true;
                 } else {
                     console.log("Please provide instructions for using repo.");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "confirm",
+            name: "confirmSite",
+            message: "Would you like to include a website link for the deployed application?",
+            default: false
+        },
+        {
+            type: "input",
+            name: "site",
+            message: "Please enter the website's URL: https://",
+            when: ({ confirmSite }) => {
+                if (confirmSite) {
+                    return true;
+                } else {
                     return false;
                 }
             }

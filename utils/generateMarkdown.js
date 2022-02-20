@@ -27,7 +27,7 @@ function renderLicenseLink(license) {
   }
 
   return url;
-}
+};
 
 // returns license section of readme, unless no license is selected
 function renderLicenseSection(license) {
@@ -41,9 +41,9 @@ function renderLicenseSection(license) {
   return `
   ## License
 
-   Licensed under [${license}](${link})
+  [${license}](${link})
   `;
-}
+};
 
 // generates markdown file for README
 function generateMarkdown(data) {
@@ -52,15 +52,28 @@ function generateMarkdown(data) {
 
   let installCommand = "`" + data.install + "`";
   let testCommand = "`" + data.test + "`";
+  
+  // returns website link
+  const getSiteLink = () => {
 
-  // function calls for license generation
-  let getLicenseTab = () => {
+    let siteLink = "";
+
+    if (data.site) {
+      siteLink = `Visit the deployed application's website at https://${data.site}`;
+    }
+
+    return siteLink;
+  };
+  let website = getSiteLink();
+
+  // returns license section in table of contents
+  const getLicenseTab = () => {
     if (data.license == "<no license>") {
       return "";
     } else {
       return "* [License](#license)"
     }
-  }
+  };
   let licenseTab = getLicenseTab();
   let licenseBadge = renderLicenseBadge(data.license);
   let licenseSection = renderLicenseSection(data.license);
@@ -75,6 +88,8 @@ function generateMarkdown(data) {
   ## Description
 
   ${data.description}
+
+  ${website}
 
   ## Table of Contents
 

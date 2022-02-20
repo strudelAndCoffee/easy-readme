@@ -1,12 +1,12 @@
 
-  # Porject Name
+  # Porject Title
 
-  ![License badge](https://img.shields.io/badge/License-GNU%20GPLv3-green)
+  ![License badge](https://img.shields.io/badge/License-Apache%20License%202.0-green)
   ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
 
-  This is a description about the project
+  This is a short description of the project.
 
   ## Table of Contents
 
@@ -21,13 +21,13 @@
 
   Enter this command to install dependencies: `npm i`
 
-  ## Usage
-
-  from the command line, runn the application, and follow prompts to generate markdown. The finished readme file will appear in the "dist" folder
-
   ## Tests
 
-  Enter this command to run application: `node index.js`
+  Enter this command to run the application: `node app.js`
+
+  ## Usage
+
+  This is what the user needs to know about using the repo.
 
   ## Contributing
 
@@ -35,13 +35,13 @@
 
   ## Questions
 
-  View my GitHub profile: [strudelAndCoffee](https://github.com/strudelAndCoffee)
-
   For additional questions, you may reach me via email: me@email.com 
+
+  View my GitHub profile: [username](https://github.com/username)
 
   
   ## License
 
-   Licensed under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+   Licensed under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
   
 

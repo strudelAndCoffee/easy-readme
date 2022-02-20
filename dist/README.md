@@ -1,14 +1,14 @@
 
-  # Porject Title
+  # a
 
-  ![License badge](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-green)
+  ![License badge](https://img.shields.io/badge/License-MIT-green)
   ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
 
-  This is a short description
+  a
 
-  Visit the deployed application's website at https://username.github.io/project
+  
 
   ## Table of Contents
 
@@ -21,29 +21,29 @@
 
   ## Installation
 
-  Enter this command to install dependencies: `npm i`
+  Enter this command to install dependencies: `a`
 
   ## Tests
 
-  Enter this command to run the application: `node index`
+  Enter this command to run the application: `a`
 
   ## Usage
 
-  This is what the user needs to know
+  a
+
+  ## Questions
+
+  For additional questions, you may reach me via email: a 
+
+  View my GitHub profile: [a](https://github.com/a)
 
   ## Contributing
 
   Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
 
-  ## Questions
-
-  For additional questions, you may reach me via email: me@email.com 
-
-  View my GitHub profile: [username](https://github.com/username)
-
   
   ## License
 
-  [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
+  This project is licensed under [MIT](https://choosealicense.com/licenses/mit)
   
 

@@ -29,7 +29,7 @@ function init() {
                 if (githubInput) {
                     return true;
                 } else {
-                    console.log("Please enter your GitHub username.")
+                    console.log("<text missing>")
                     return false;
                 }
             }
@@ -42,7 +42,7 @@ function init() {
                 if (emailInput) {
                     return true;
                 } else {
-                    console.log("Please enter your email.");
+                    console.log("<text missing>");
                     return false;
                 }
             }
@@ -55,7 +55,7 @@ function init() {
                 if (titleInput) {
                     return true;
                 } else {
-                    console.log("Please enter a name for your project.");
+                    console.log("<text missing>");
                     return false;
                 }
             }
@@ -68,7 +68,7 @@ function init() {
                 if (input) {
                     return true;
                 } else {
-                    console.log("Please provide a description for your project.");
+                    console.log("<text missing>");
                     return false;
                 }
             }
@@ -87,7 +87,7 @@ function init() {
                 if (input) {
                     return true;
                 } else {
-                    console.log("Please provide a command for installation.");
+                    console.log("<text missing>");
                     return false;
                 }
             }
@@ -100,7 +100,7 @@ function init() {
                 if (input) {
                     return true;
                 } else {
-                    console.log("Please provide a command for running tests.");
+                    console.log("<text missing>");
                     return false;
                 }
             }
@@ -113,7 +113,46 @@ function init() {
                 if (input) {
                     return true;
                 } else {
-                    console.log("Please provide instructions for using repo.");
+                    console.log("<text missing>");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "confirm",
+            name: "confirmContribute",
+            message: "Do you want to include contribution guidelines? (Default: Contributer Covenant Code of Conduct)",
+            default: true,
+        },
+        {
+            type: "confirm",
+            name: "confirmCustom",
+            message: "Do you want to provide custom guidelines?",
+            default: false,
+            when: ({ confirmContribute }) => {
+                if (confirmContribute) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "contribute",
+            message: "Please provide your contribution guidelines:",
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("<text missing>");
+                    return false;
+                }
+            },
+            when: ({ confirmCustom }) => {
+                if (confirmCustom) {
+                    return true;
+                } else {
                     return false;
                 }
             }

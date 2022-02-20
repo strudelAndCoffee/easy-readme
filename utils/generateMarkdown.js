@@ -41,7 +41,7 @@ function renderLicenseSection(license) {
   return `
   ## License
 
-  [${license}](${link})
+  This project is licensed under [${license}](${link})
   `;
 };
 
@@ -110,15 +110,15 @@ function generateMarkdown(data) {
 
   ${data.info}
 
-  ## Contributing
-
-  Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
-
   ## Questions
 
   For additional questions, you may reach me via email: ${data.email} 
 
   View my GitHub profile: [${data.github}](https://github.com/${data.github})
+
+  ## Contributing
+
+  Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
 
   ${licenseSection}
 

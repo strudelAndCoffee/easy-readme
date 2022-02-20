@@ -1,3 +1,5 @@
+// some code may be written without line tabbing to preserve markdown layout formatting
+
 // returns a license badge
 function renderLicenseBadge(license) {
 
@@ -29,100 +31,144 @@ function renderLicenseLink(license) {
   return url;
 };
 
-// returns license section of readme, unless no license is selected
+// returns license section of readme, unless no license selected
 function renderLicenseSection(license) {
 
-  if (license == "<no license>") {
-    return "";
-  }
+if (license == "<no license>") {
+return "";
+} else {
 
-  let link = renderLicenseLink(license);
+let link = renderLicenseLink(license);
 
-  return `
-  ## License
+return `
+## License
 
-  This project is licensed under [${license}](${link})
-  `;
+This project is licensed under [${license}](${link})`;
+}
+};
+
+// returns Contributer Covenant code of conduct badge
+function renderContributeBadge(data) {
+if (data.confirmContribute && !data.contribute) {
+// link copied from: https://www.contributor-covenant.org/version/2/1/code_of_conduct/
+return `![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
+`;
+} else {
+return "";
+}
+};
+
+// returns contributing section of readme, unless no guidelines selected
+function renderContributeSection(data) {
+
+let guidelines = "";
+
+if (data.confirmContribute) {
+if (data.confirmCustom) {
+
+guidelines = `
+## Contributing
+
+${data.contribute}`;
+} else {
+
+guidelines = `
+## Contributing
+
+Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)`;
+}
+}
+return guidelines;
 };
 
 // generates markdown file for README
 function generateMarkdown(data) {
 
-  let installCommand = "`" + data.install + "`";
-  let testCommand = "`" + data.test + "`";
-  
-  // returns website link
-  const getSiteLink = () => {
+console.log(data);
 
-    let siteLink = "";
-
-    if (data.site) {
-      siteLink = `Visit the deployed application's website at https://${data.site}`;
-    }
-
-    return siteLink;
-  };
-  let website = getSiteLink();
-
-  // returns license section in table of contents
-  const getLicenseTab = () => {
-    if (data.license == "<no license>") {
-      return "";
-    } else {
-      return "* [License](#license)"
-    }
-  };
-  let licenseTab = getLicenseTab();
-  let licenseBadge = renderLicenseBadge(data.license);
-  let licenseSection = renderLicenseSection(data.license);
-
-  // README markdown layout
-  return `
-  # ${data.title}
-
-  ${licenseBadge}
-  ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
-
-  ## Description
-
-  ${data.description}
-
-  ${website}
-
-  ## Table of Contents
-
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  ${licenseTab}
-
-  ## Installation
-
-  Enter this command to install dependencies: ${installCommand}
-
-  ## Tests
-
-  Enter this command to run the application: ${testCommand}
-
-  ## Usage
-
-  ${data.info}
-
-  ## Questions
-
-  For additional questions, you may reach me via email: ${data.email} 
-
-  View my GitHub profile: [${data.github}](https://github.com/${data.github})
-
-  ## Contributing
-
-  Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
-
-  ${licenseSection}
-
+// returns website link
+const getSiteLink = () => {
+let siteLink = "";
+if (data.site) {
+siteLink = `
+Visit the deployed application's website at https://${data.site}
 `;
 }
+return siteLink;
+};
+
+// returns license section in table of contents
+const getLicenseTab = () => {
+  if (data.license == "<no license>") {
+    return "";
+  } else {
+    return "* [License](#license)"
+  }
+};
+
+// returns contributing section in table of contents
+const getContributionTab = () => {
+  if (data.confirmContribute) {
+    return `* [Contributing](#contributing)`;
+  } else {
+    return "";
+  }
+};
+
+// variables for sections
+let installCommand = "`" + data.install + "`";
+let testCommand = "`" + data.test + "`";
+let contributeSection = renderContributeSection(data);
+let licenseSection = renderLicenseSection(data.license);
+
+// variables for links
+let website = getSiteLink();
+let licenseTab = getLicenseTab();
+let contributionTab = getContributionTab();
+
+// variables for badges
+let licenseBadge = renderLicenseBadge(data.license);
+let contributeBadge = renderContributeBadge(data);
+
+// README markdown layout
+return `
+# ${data.title}
+
+${licenseBadge}
+${contributeBadge}
+## Description
+
+${data.description}
+${website}
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Questions](#questions)
+${contributionTab}
+${licenseTab}
+
+## Installation
+
+Enter this command to install dependencies: ${installCommand}
+
+## Tests
+
+Enter this command to run the application: ${testCommand}
+
+## Usage
+
+${data.info}
+
+## Questions
+
+For additional questions, you may reach me via email: ${data.email} 
+
+View my GitHub profile: [${data.github}](https://github.com/${data.github})
+${contributeSection}
+${licenseSection}
+`;
+};
 
 module.exports = generateMarkdown;

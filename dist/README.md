@@ -1,49 +1,46 @@
 
-  # a
+# Project Title
 
-  ![License badge](https://img.shields.io/badge/License-MIT-green)
-  ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
+![License badge](https://img.shields.io/badge/License-Apache%20License%202.0-green)
+![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
-  ## Description
+## Description
 
-  a
+This is a short description of the project
 
-  
+Visit the deployed application's website at https://username.github.io/project
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  * [License](#license)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Questions](#questions)
+* [Contributing](#contributing)
+* [License](#license)
 
-  ## Installation
+## Installation
 
-  Enter this command to install dependencies: `a`
+Enter this command to install dependencies: `npm i`
 
-  ## Tests
+## Tests
 
-  Enter this command to run the application: `a`
+Enter this command to run the application: `node index`
 
-  ## Usage
+## Usage
 
-  a
+This is what the user needs to know
 
-  ## Questions
+## Questions
 
-  For additional questions, you may reach me via email: a 
+For additional questions, you may reach me via email: me@email.com 
 
-  View my GitHub profile: [a](https://github.com/a)
+View my GitHub profile: [username](https://github.com/username)
 
-  ## Contributing
+## Contributing
 
-  Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
+Please review the Contributer Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt)
 
-  
-  ## License
+## License
 
-  This project is licensed under [MIT](https://choosealicense.com/licenses/mit)
-  
-
+This project is licensed under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)

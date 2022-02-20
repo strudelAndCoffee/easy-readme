@@ -1,12 +1,14 @@
 
   # Porject Title
 
-  ![License badge](https://img.shields.io/badge/License-Apache%20License%202.0-green)
+  ![License badge](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-green)
   ![Code of Conduct badge](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
 
-  This is a short description of the project.
+  This is a short description
+
+  Visit the deployed application's website at https://username.github.io/project
 
   ## Table of Contents
 
@@ -23,11 +25,11 @@
 
   ## Tests
 
-  Enter this command to run the application: `node app.js`
+  Enter this command to run the application: `node index`
 
   ## Usage
 
-  This is what the user needs to know about using the repo.
+  This is what the user needs to know
 
   ## Contributing
 
@@ -42,6 +44,6 @@
   
   ## License
 
-   Licensed under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
+  [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
   
 

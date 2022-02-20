@@ -12,7 +12,7 @@ function writeToFile(fileName, data) {
             }
             resolve({
                 ok: true,
-                message: "README created!"
+                message: "README created! Check 'dist' folder."
             })
         })
     });
@@ -95,7 +95,7 @@ function init() {
         {
             type: "input",
             name: "test",
-            message: "What command should be run to test the application??",
+            message: "What command should be run to test the application?",
             validate: input => {
                 if (input) {
                     return true;
@@ -142,5 +142,16 @@ function init() {
 init()
 .then(generateMarkdown)
 .then(mdFile => {
-    writeToFile("./dist/README.md", mdFile);
+    return writeToFile("./dist/README.md", mdFile);
+})
+.then(response => {
+    console.log("--------------");
+    if (response.ok) {
+        console.log(response.message);
+    } else {
+        console.log(response);
+    }
+})
+.catch(err => {
+    console.error(err);
 });

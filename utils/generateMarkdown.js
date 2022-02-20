@@ -48,8 +48,6 @@ function renderLicenseSection(license) {
 // generates markdown file for README
 function generateMarkdown(data) {
 
-  console.log(data);
-
   let installCommand = "`" + data.install + "`";
   let testCommand = "`" + data.test + "`";
   

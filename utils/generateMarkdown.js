@@ -45,7 +45,7 @@ function renderLicenseSection(license) {
   `;
 }
 
-// TODO: Create a function to generate markdown for README
+// generates markdown file for README
 function generateMarkdown(data) {
 
   console.log(data);
@@ -65,7 +65,7 @@ function generateMarkdown(data) {
   let licenseBadge = renderLicenseBadge(data.license);
   let licenseSection = renderLicenseSection(data.license);
 
-  // generated README markdown layout
+  // README markdown layout
   return `
   # ${data.title}
 
@@ -89,13 +89,13 @@ function generateMarkdown(data) {
 
   Enter this command to install dependencies: ${installCommand}
 
+  ## Tests
+
+  Enter this command to run the application: ${testCommand}
+
   ## Usage
 
   ${data.info}
-
-  ## Tests
-
-  Enter this command to run application: ${testCommand}
 
   ## Contributing
 
@@ -103,9 +103,9 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  View my GitHub profile: [${data.github}](https://github.com/${data.github})
-
   For additional questions, you may reach me via email: ${data.email} 
+
+  View my GitHub profile: [${data.github}](https://github.com/${data.github})
 
   ${licenseSection}
 

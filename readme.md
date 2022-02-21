@@ -44,7 +44,7 @@ You will find the finished file in the distribute, or "dist" folder, under the r
 
 You now have a professional README ready to use for your project!
 
-Watch a tutorial walkthrough here: [Video Tutorial](https://drive.google.com/file/d/1TMy76afdcd2XXwbZjp95AKVuM0wDPKr9/view?usp=sharing)
+Download the walkthrough tutorial here: [Video Tutorial](https://drive.google.com/file/d/1TMy76afdcd2XXwbZjp95AKVuM0wDPKr9/view?usp=sharing)
 
 ## Questions
 

@@ -28,6 +28,8 @@ Enter this command to run the application: `node index.js`
 
 ## Usage
 
+![walk-through tutorial](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/Easy%20Readme%20Tutorial.mp4)
+
 After cloning the repo to your computer and installing dependencies...
 
 ![Installing dependencies in Git Bash](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-1.png)

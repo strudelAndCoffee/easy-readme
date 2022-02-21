@@ -28,8 +28,6 @@ Enter this command to run the application: `node index.js`
 
 ## Usage
 
-![Walk through tutorial](https://drive.google.com/file/d/1TMy76afdcd2XXwbZjp95AKVuM0wDPKr9/view?usp=sharing)
-
 After cloning the repo to your computer and installing dependencies...
 
 ![Installing dependencies in Git Bash](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-1.png)
@@ -45,6 +43,8 @@ You will find the finished file in the distribute, or "dist" folder, under the r
 ![Generated Markdown of readme](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-4.png)
 
 You now have a professional README ready to use for your project!
+
+Watch a tutorial walkthrough here: [Video Tutorial](https://drive.google.com/file/d/1TMy76afdcd2XXwbZjp95AKVuM0wDPKr9/view?usp=sharing)
 
 ## Questions
 

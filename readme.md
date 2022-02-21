@@ -12,8 +12,8 @@ The layout of this README was generated using the application! (Images and video
 ## Table of Contents
 
 * [Installation](#installation)
-* [Usage](#usage)
 * [Tests](#tests)
+* [Usage](#usage)
 * [Questions](#questions)
 * [Contributing](#contributing)
 * [License](#license)

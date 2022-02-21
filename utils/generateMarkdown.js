@@ -143,8 +143,8 @@ ${website}
 ## Table of Contents
 
 * [Installation](#installation)
-* [Usage](#usage)
 * [Tests](#tests)
+* [Usage](#usage)
 * [Questions](#questions)
 ${contributionTab}
 ${licenseTab}

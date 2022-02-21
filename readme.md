@@ -30,17 +30,17 @@ Enter this command to run the application: `node index.js`
 
 After cloning the repo to your computer and installing dependencies...
 
-![Installing dependencies in Git Bash](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-1.png)
+![Installing dependencies in Git Bash](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-1.png)
 
 From the root directory in Git Bash/Terminal, type "node index.js" to run the program. A series of questions will collect the information you wish to include about your project, and will code the Markdown automatically.
 
-![Start command and initial questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-2.png)
+![Start command and initial questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-2.png)
 
-![Result after answering all questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-3.png)
+![Result after answering all questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-3.png)
 
 You will find the finished file in the distribute, or "dist" folder, under the repository's root directory.
 
-![Generated Markdown of readme](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-4.png)
+![Generated Markdown of readme](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-4.png)
 
 You now have a professional README ready to use for your project!
 

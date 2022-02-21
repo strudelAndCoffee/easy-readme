@@ -34,7 +34,7 @@ After cloning the repo to your computer and installing dependencies...
 
 From the root directory in Git Bash/Terminal, type "node index.js" to run the program. A series of questions will collect the information you wish to include about your project, and will code the Markdown automatically.
 
-![Start command and initial questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-2.png)
+![Start command and initial questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-2edit.png)
 
 ![Result after answering all questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-3.png)
 

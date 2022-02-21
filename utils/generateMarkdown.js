@@ -165,7 +165,7 @@ ${data.info}
 
 For additional questions, you may reach me via email: ${data.email} 
 
-View my GitHub profile: [${data.github}](https://github.com/${data.github})
+View my GitHub profile: [GitHub profile](https://github.com/${data.github})
 ${contributeSection}
 ${licenseSection}
 `;

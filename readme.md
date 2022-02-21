@@ -5,7 +5,9 @@
 
 ## Description
 
-An easy to use application to generate a professional README.md file for your repository. The layout for this README was created using the Easy Readme!
+Easy Readme is an easy to use application to quickly generate a README file for your repository. Simply answer a few questions, and the Markdown will be coded with the information you provide, complete with table of contents, badges, and license (including a link to the license documentation.)
+
+The layout of this README was generated using the application. Demo images and video link were added afterwards.
 
 ## Table of Contents
 
@@ -18,7 +20,7 @@ An easy to use application to generate a professional README.md file for your re
 
 ## Installation
 
-Enter this command to install dependencies: `npm i`
+Enter this command to install dependencies: `npm install`
 
 ## Tests
 
@@ -26,13 +28,26 @@ Enter this command to run the application: `node index.js`
 
 ## Usage
 
-From Git Bash/Terminal, type "node index.js" to start the program. A series of questions will collect the information you wish to include in your readme file, and will generate the markdown automatically. You will find the finished file in the "dist" folder, under the repository's root directory.
+After cloning the repo to your computer and installing dependencies,
+
+![Installing dependencies in Git Bash]
+
+From the root directory in Git Bash/Terminal, type "node index.js" to run the program. A series of questions will collect the information you wish to include about your project, and will code the Markdown automatically.
+
+![Start command and initial questions] 
+![Result after answering all questions]
+
+You will find the finished file in the distribute, or "dist" folder, under the repository's root directory.
+
+![Generated Markdown of readme]
+
+You now have a professional README ready to use for your project!
 
 ## Questions
 
-For additional questions, you may reach me via email: me@email.com 
+For additional questions, you may reach me via email: strudelandcoffee@gmail.com 
 
-View my GitHub profile: [strudelAndCoffee](https://github.com/strudelAndCoffee)
+View my GitHub profile: [GitHub profile](https://github.com/strudelAndCoffee)
 
 ## Contributing
 

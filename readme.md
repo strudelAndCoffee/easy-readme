@@ -28,7 +28,7 @@ Enter this command to run the application: `node index.js`
 
 ## Usage
 
-![walk-through tutorial](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/Easy%20Readme%20Tutorial.mp4)
+[Walk through tutorial](https://drive.google.com/file/d/1TMy76afdcd2XXwbZjp95AKVuM0wDPKr9/view?usp=sharing)
 
 After cloning the repo to your computer and installing dependencies...
 

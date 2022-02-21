@@ -7,7 +7,7 @@
 
 Easy Readme is an easy to use application to quickly generate a README file for your repository. Simply answer a few questions, and the Markdown will be coded with the information you provide, complete with table of contents, badges, and license (including a link to the license documentation.)
 
-The layout of this README was generated using the application. Demo images and video link were added afterwards.
+The layout of this README was generated using the application! (Images and video link added afterwards)
 
 ## Table of Contents
 
@@ -28,18 +28,19 @@ Enter this command to run the application: `node index.js`
 
 ## Usage
 
-After cloning the repo to your computer and installing dependencies,
+After cloning the repo to your computer and installing dependencies...
 
-![Installing dependencies in Git Bash](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-1.png)
+![Installing dependencies in Git Bash](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-1.png)
 
 From the root directory in Git Bash/Terminal, type "node index.js" to run the program. A series of questions will collect the information you wish to include about your project, and will code the Markdown automatically.
 
-![Start command and initial questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-2.png)
-![Result after answering all questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-3.png)
+![Start command and initial questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-2.png)
+
+![Result after answering all questions](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-3.png)
 
 You will find the finished file in the distribute, or "dist" folder, under the repository's root directory.
 
-![Generated Markdown of readme](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/demo-screencap-4.png)
+![Generated Markdown of readme](https://github.com/strudelAndCoffee/easy-readme/blob/main/assets/images/screencap-4.png)
 
 You now have a professional README ready to use for your project!
 
